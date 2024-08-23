@@ -3,7 +3,7 @@
 	"id": "sprawlstats",
 	"version": "${version}",
 	"name": "Sprawl Stats",
-	"description": "A mod that shows your MineSprawl stats onto your Discord presence.",
+	"description": "A mod that shows your MineSprawl stats on your Discord presence.",
 	"authors": [
 		"CDX",
 		"Crackle"
