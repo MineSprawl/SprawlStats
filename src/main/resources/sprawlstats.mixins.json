@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "net.minesprawl.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"SprawlStatsMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
