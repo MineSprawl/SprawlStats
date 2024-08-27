@@ -9,7 +9,8 @@
 		"Crackle"
 	],
 	"contact": {
-		"homepage": "https://minesprawl.net"
+		"homepage": "https://minesprawl.net",
+		"issues": "https://minesprawl.net/discord"
 	},
 	"license": "Apache-2.0",
 	"icon": "assets/sprawlstats/icon.png",
