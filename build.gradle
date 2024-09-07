@@ -11,7 +11,8 @@ base {
 }
 
 repositories {
-
+	mavenCentral()
+	maven { url 'https://jitpack.io' }
 }
 
 loom {
@@ -34,6 +35,9 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+
+	implementation 'com.github.JnCrMx:discord-game-sdk4j:5cdac341e3'
+	include 'com.github.JnCrMx:discord-game-sdk4j:5cdac341e3'
 
 }
 
