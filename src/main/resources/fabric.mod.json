@@ -1,38 +1,32 @@
 {
-	"schemaVersion": 1,
-	"id": "sprawlstats",
-	"version": "${version}",
-	"name": "Sprawl Stats",
-	"description": "A mod that shows your MineSprawl stats on your Discord presence.",
-	"authors": [
-		"CDX",
-		"Crackle"
-	],
-	"contact": {
-		"homepage": "https://minesprawl.net",
-		"issues": "https://minesprawl.net/discord"
-	},
-	"license": "Apache-2.0",
-	"icon": "assets/sprawlstats/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"net.minesprawl.SprawlStats"
-		],
-		"client": [
-			"net.minesprawl.SprawlStatsClient"
-		]
-	},
-	"mixins": [
-		"sprawlstats.mixins.json"
-	],
-	"depends": {
-		"fabricloader": ">=0.15.11",
-		"minecraft": "~1.21",
-		"java": ">=21",
-		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
-	}
+  "schemaVersion": 1,
+  "id": "sprawlstats",
+  "version": "${version}",
+  "name": "SprawlStats",
+  "description": "A mod meant to overall improve your MineSprawl experience.",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/sprawlstats/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.minesprawl.sprawlstats.client.SprawlstatsClient"
+    ],
+    "main": [
+      "net.minesprawl.sprawlstats.Sprawlstats"
+    ]
+  },
+  "mixins": [
+    "sprawlstats.mixins.json",
+    {
+      "config": "sprawlstats.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
 }

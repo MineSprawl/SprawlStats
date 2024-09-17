@@ -1,9 +1,10 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "net.minesprawl.sprawlstats.mixin",
+  "package": "net.minesprawl.sprawlstats.client.mixin",
   "compatibilityLevel": "JAVA_21",
-  "mixins": [
+  "client": [
+    "MultiplayerScreenMixin"
   ],
   "injectors": {
     "defaultRequire": 1
