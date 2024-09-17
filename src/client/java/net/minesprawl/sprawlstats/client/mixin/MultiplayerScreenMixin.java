@@ -14,7 +14,7 @@ public class MultiplayerScreenMixin {
     private void init(CallbackInfo info) {
         ServerList screen = (ServerList) (Object) this;
 
-        ServerInfo serverInfo = new ServerInfo("MineSprawl", "play.minesprawl.net", ServerInfo.ServerType.OTHER);
+        ServerInfo serverInfo = new ServerInfo("MineSprawl", "mc.minesprawl.net", ServerInfo.ServerType.OTHER);
 
         screen.add(serverInfo, false);
     }
